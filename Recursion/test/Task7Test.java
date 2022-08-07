@@ -10,9 +10,9 @@ public class Task7Test {
     public void findMax() {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(3);
+        list.add(1);
         list.add(4);
         list.add(4);
-        list.add(3);
         int m = Task7.findSecondMax(list);
         assertEquals(4, m);
     }
@@ -21,11 +21,11 @@ public class Task7Test {
     public void findMax2() {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(5);
-        list.add(4);
+        list.add(5);
         list.add(4);
         list.add(3);
         int m = Task7.findSecondMax(list);
-        assertEquals(4, m);
+        assertEquals(5, m);
     }
 
     @Test
