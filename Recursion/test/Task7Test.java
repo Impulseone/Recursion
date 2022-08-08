@@ -34,7 +34,7 @@ public class Task7Test {
         list.add(5);
         list.add(3);
         int m = Task7.findSecondMax(list);
-        assertEquals(3, m);
+        assertEquals(5, m);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class Task7Test {
         list.add(2);
         list.add(3);
         int m = Task7.findSecondMax(list);
-        assertEquals(2, m);
+        assertEquals(3, m);
     }
 
     @Test
@@ -54,6 +54,6 @@ public class Task7Test {
         list.add(1);
         list.add(3);
         int m = Task7.findSecondMax(list);
-        assertEquals(2, m);
+        assertEquals(3, m);
     }
 }
