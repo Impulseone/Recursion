@@ -9,11 +9,12 @@ public class Task7 {
         if (index == all.size()) {
             return secondMax == null ? max : secondMax;
         }
-        if (all.get(index).equals(max) && secondMax == null) {
-            secondMax = all.get(index);
+        Integer currentElement = all.get(index);
+        if (currentElement.equals(max) && secondMax == null) {
+            secondMax = currentElement;
         }
-        if (all.get(index) > max) {
-            max = all.get(index);
+        if (currentElement > max) {
+            max = currentElement;
             secondMax = null;
         }
         return findMax(all, max, secondMax, index + 1);
